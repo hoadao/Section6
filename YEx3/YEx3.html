@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tim gia tri nho nhat trong mang</title>
+</head>
+<body>
+    <script>
+        var n=parseInt(prompt("Nhap vao so phan tu trong mang: "));
+        var mang=[];
+        for(var i=0;i<n;i++) {
+            mang[i] = prompt("Nhap phan tu thu " + i + ": ");
+
+        }
+        function timPtBeNhat(a) {
+            var min=a[0];
+            for(var i=0;i<a.length;i++){
+                if(min>a[i]){
+                    min=a[i];
+                }
+            }
+            return min;
+        }
+        timPtBeNhat(mang);
+    </script>
+</body>
+</html>
