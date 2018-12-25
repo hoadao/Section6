@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyen doi nhiet do</title>
+    <h1>Chuyen doi nhiet do: </br></h1>
+</head>
+<body>
+    <h2>Nhap vao do F de chuyen sang do C: </br></h2>
+    Fahrenheit: <input id="doF" type="number"/>
+    <button onclick="chuyenDoi()">Chuyen doi</button>
+    </br>
+    Cencius: <div id="ketQua"/>
+    <script>
+        function chuyenDoi() {
+            var doF=document.getElementById("doF").value;
+            var doC=parseFloat((doF-32)/1.8);
+            document.getElementById("ketQua").innerHTML=doC;
+        }
+    </script>
+</body>
+</html>
