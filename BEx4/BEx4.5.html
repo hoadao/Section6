@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gia tri nho nhat</title>
+</head>
+<body>
+    <script>
+        var mang=[];
+        for(var i=0;i<3;i++){
+            mang[i]=parseInt(prompt("Nhap vao so thu: "+i));
+        }
+        function timPtBeNhat(a) {
+            var min=a[0];
+            for(var i=0;i<a.length;i++){
+                if(min>a[i]){
+                    min=a[i];
+                }
+            }
+            return min;
+        }
+        alert(timPtBeNhat(mang));
+    </script>
+</body>
+</html>

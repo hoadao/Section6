@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiem tra ki tu xem co thuoc mang khong</title>
+</head>
+<body>
+    <script>
+        function kiemTra() {
+            var chuoi = prompt("Nhap vao mang ki tu: ");
+            var mangKiTu = chuoi.toString();
+            var kiTu = prompt("Nhap vao ki tu muon kiem tra: ");
+            var dem=0;
+            for(var i=0;i<mangKiTu.length;i++){
+                if(kiTu===mangKiTu[i]){
+                    dem++;
+                }
+            }
+            if(dem==0){
+                return -1;
+            }
+            else{
+                return dem;
+            }
+        }
+        kiemTra();
+
+    </script>
+</body>
+</html>

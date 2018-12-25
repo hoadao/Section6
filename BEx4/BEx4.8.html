@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dao nguoc mang so nguyen</title>
+</head>
+<body>
+    <script>
+        var n=prompt("Nhap vao so phan tu cua mang: ");
+        var mangTruoc=[];
+        for(var i=0;i<n;i++){
+            mangTruoc[i]=parseInt(prompt("Nhap  phan tu thu "+i+" :"));
+        }
+        function daoNguocMang(a) {
+            var mangSau = [];
+            for (var i = n - 1; i >= 0; i--) {
+                mangSau.push(a[i]);
+            }
+            return mangSau;
+        }
+        console.log(daoNguocMang(mangTruoc));
+
+    </script>
+</body>
+</html>
