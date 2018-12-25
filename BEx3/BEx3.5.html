@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ngoi sao</title>
+</head>
+<body>
+    <script>
+        var ngoiSao=["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe","Regulus"];
+        var chomSao=["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+        function timTen(chuoi) {
+            for(var i=0;i<ngoiSao.length;i++){
+                if(chuoi==ngoiSao[i]){
+                    return chomSao[i];
+                }
+            }
+        }
+        var tenSao=prompt("Nhap vao ten ngoi sao: ");
+        document.write(timTen(tenSao));
+    </script>
+</body>
+</html>
